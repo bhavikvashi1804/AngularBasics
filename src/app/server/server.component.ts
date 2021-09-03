@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerComponent implements OnInit {
 
+
+  serverId = 121;
+  serverStatus = "Online"
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getCurrentUserName() : string{
+    return 'Bhavik Vashi';
   }
 
 }
