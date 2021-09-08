@@ -10,6 +10,8 @@ export class ServerComponent implements OnInit {
 
   serverId = 121;
   serverStatus = "Online"
+  isInUse = true;
+  name= 'Root';
 
   constructor() { }
 
