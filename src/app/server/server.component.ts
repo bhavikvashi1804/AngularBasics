@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server.component.css'],
 })
 export class ServerComponent implements OnInit {
-  name = 'Bhavik';
-  name1 = 'Raj';
-
+  
+  serverCreationStatus = 'No server was created!';
+  
   isDisabled = true;
 
   constructor() {
