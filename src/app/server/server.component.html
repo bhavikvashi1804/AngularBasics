@@ -1,7 +1,3 @@
-{{ serverCreationStatus}}
+User Name:<input type="text" (input)="submitData($event)">
 
-<br>
-<button class="btn btn-primary" (click)="onCreateServer()">Create Server</button>
-<br>
-<div *ngIf="show">Button Click</div>
-<button class="btn btn-danger" (click) = " show = !show  ">Click Me</button>
+You have entered: {{ name }}
