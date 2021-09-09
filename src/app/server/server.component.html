@@ -1,1 +1,7 @@
 {{ serverCreationStatus}}
+
+<br>
+<button class="btn btn-primary" (click)="onCreateServer()">Create Server</button>
+<br>
+<div *ngIf="show">Button Click</div>
+<button class="btn btn-danger" (click) = " show = !show  ">Click Me</button>
