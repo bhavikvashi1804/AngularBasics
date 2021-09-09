@@ -13,7 +13,5 @@ export class ServerComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  submitData(event: Event){
-    this.name = (<HTMLInputElement>event.target).value;
-  }
+
 }
