@@ -1,3 +1,12 @@
-User Name:<input type="text" [(ngModel)]="name">
+<div class="card">
+    <div class="card-body">
+        <ul>
+            <li *ngFor="let student of studentNames; odd as o">
+                <span [ngClass]="{oddStudent: o , evenStudent: !o}">{{student}}</span>
+                
+            </li>
+        </ul>
 
-You have entered: {{ name }}
+    </div>
+
+</div>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerComponent implements OnInit {
 
-  name = "";
+  studentNames = ['Raj', 'Yash', 'Bhavik', 'Meet', 'Dhruvik'];
   
   constructor() {}
 
