@@ -23,4 +23,16 @@ export class ServerComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onServerAdded(data: {
+    name: string,
+    critical: boolean,
+    content: string
+  }){
+    this.serverElements.push({
+      name: data.name,
+      critical: data.critical,
+      content: data.content
+    });
+  }
 }
