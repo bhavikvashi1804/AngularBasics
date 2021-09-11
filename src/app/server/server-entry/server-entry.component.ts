@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerEntryComponent implements OnInit {
 
+  serverName = "";
+  serverContent = "";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addNewServer(){
+    console.log(this.serverName);
+    console.log(this.serverContent);
   }
 
 }
