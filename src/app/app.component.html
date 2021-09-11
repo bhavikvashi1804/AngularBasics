@@ -1,3 +1,6 @@
 <div class="container">
-    <app-server *ngFor="let oneServer of serverElements"></app-server>
+    <app-server 
+    *ngFor="let oneServer of serverElements"
+    [serverElement]="oneServer">
+    </app-server>
 </div>
