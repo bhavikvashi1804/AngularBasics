@@ -15,6 +15,12 @@
                     <input type="text" class="form-control" id="content" [(ngModel)]="serverContent">
                 </div>
             </div>
+            <div class="col-sm-2 py-auto my-auto">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="isCritical" [(ngModel)]="isCritical">
+                    <label class="form-check-label" for="isCritical" >Critical Server</label>
+                </div>
+            </div>
         </div>
         <hr>
         <button type="button" class="btn btn-primary" (click)="addNewServer()">Submit</button>

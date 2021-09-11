@@ -10,7 +10,7 @@ export class ServerListComponent implements OnInit {
   @Input('serverData')
   serverElement!: {
     name: string,
-    type: string,
+    critical: boolean,
     content: string
   };
 

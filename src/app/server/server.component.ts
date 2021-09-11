@@ -10,12 +10,12 @@ export class ServerComponent implements OnInit {
   serverElements = [
     {
       name: 'server 1',
-      type: 'normal',
+      critical: false,
       content: 'server 1 info',
     },
     {
       name: 'server 2',
-      type: 'critical',
+      critical: true,
       content: 'server 2 info',
     },
   ];

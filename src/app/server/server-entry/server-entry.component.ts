@@ -9,6 +9,7 @@ export class ServerEntryComponent implements OnInit {
 
   serverName = "";
   serverContent = "";
+  isCritical = false;
 
   constructor() { }
 
@@ -18,6 +19,7 @@ export class ServerEntryComponent implements OnInit {
   addNewServer(){
     console.log(this.serverName);
     console.log(this.serverContent);
+    console.log(this.isCritical)
   }
 
 }
