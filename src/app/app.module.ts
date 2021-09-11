@@ -5,11 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
+import { ServerListComponent } from './server/server-list/server-list.component';
+import { ServerEntryComponent } from './server/server-entry/server-entry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    ServerListComponent,
+    ServerEntryComponent
   ],
   imports: [
     BrowserModule,
