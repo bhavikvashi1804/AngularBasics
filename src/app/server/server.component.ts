@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ServerComponent implements OnInit {
 
-  @Input()
+  @Input('serverData')
   serverElement!: {
     name: string,
     type: string,
