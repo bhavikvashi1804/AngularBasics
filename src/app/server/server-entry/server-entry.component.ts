@@ -10,7 +10,7 @@ export class ServerEntryComponent implements OnInit {
   serverContent = '';
   isCritical = false;
 
-  @Output()
+  @Output('serverCreatedEmitter')
   serverCreated = new EventEmitter<{
     name: string;
     critical: boolean;
