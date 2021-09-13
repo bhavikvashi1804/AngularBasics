@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-server-entry',
@@ -9,6 +9,9 @@ export class ServerEntryComponent implements OnInit {
   serverName = '';
   serverContent = '';
   isCritical = false;
+
+  @ViewChild('serverName')
+  serverNameInput!: ElementRef;
 
   @Output('serverCreatedEmitter')
   serverCreated = new EventEmitter<{
@@ -26,7 +29,7 @@ export class ServerEntryComponent implements OnInit {
     //console.log(this.serverContent);
     //console.log(this.isCritical);
     this.serverCreated.emit({
-      name: this.serverName,
+      name: this.serverNameInput.nativeElement.value,
       content: this.serverContent,
       critical: this.isCritical,
     });
