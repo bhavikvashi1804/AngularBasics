@@ -1,5 +1,6 @@
 <div class="card" style="width: 18rem;">
     <div class="card-body">
+        <ng-content></ng-content>
         <h5 class="card-title" [ngStyle]="{'color': serverElement.critical ? 'red' : 'green' }">
             {{serverElement.name}}</h5>
         <p class="card-text">{{serverElement.content}}</p>

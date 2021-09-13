@@ -1,3 +1,6 @@
 <app-server-entry (serverCreatedEmitter)="onServerAdded($event)"></app-server-entry>
 
-<app-server-list *ngFor="let item of serverElements" [serverData]="item"></app-server-list>
+<app-server-list *ngFor="let item of serverElements; index as i" [serverData]="item">
+    <p #myPara>My paragraph</p>
+    <h6>Server Index: {{i}}</h6>
+</app-server-list>
