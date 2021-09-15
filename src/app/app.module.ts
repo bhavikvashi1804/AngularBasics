@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServerListComponent } from './server/server-list/server-list.component';
 import { ServerEntryComponent } from './server/server-entry/server-entry.component';
+import { BasicHighlightDirective } from './highlight-directive/basic-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     ServerListComponent,
-    ServerEntryComponent
+    ServerEntryComponent,
+    BasicHighlightDirective
   ],
   imports: [
     BrowserModule,
